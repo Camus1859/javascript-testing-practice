@@ -1,7 +1,7 @@
- const capitalizeStr = require('./capitalize')
+import capitalizeString from './capitalize'
 
 test('Capitalizes first letter in string', () => {
-  expect(capitalizeStr('hello world')).toEqual('Hello world');
+  expect(capitalizeString('hello world')).toEqual('Hello world');
 });
 
 

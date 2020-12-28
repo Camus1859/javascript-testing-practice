@@ -1,5 +1,4 @@
-const { expect } = require('@jest/globals')
-const reverseStr = require('./reversestring')
+import reverseStr from'./reversestring'
 
 test('Reverse a sring', () => {
   expect(reverseStr('abc def')).toEqual('fed cba')
