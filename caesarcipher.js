@@ -15,12 +15,9 @@ function caesarCipher(string, number) {
       string[i] == string[i].toLowerCase()
     ) {
       let newNum1_26 = string.charCodeAt([i]) - 96;
-      console.log(newNum1_26)
       let remainder1_26 = (newNum1_26 + number) % 26;
       remainder1_26 === 0 ? remainder1_26 = 26 : remainder1_26 = remainder1_26
       let newNum = remainder1_26 + 96;
-      console.log(remainder1_26)
-      console.log(newNum)
       let newString = String.fromCharCode(newNum);
       array.push(newString);
     } else {
